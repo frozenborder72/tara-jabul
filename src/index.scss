@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'Trajan Pro';
+  src: local('TrajanPro-Regular'),
+    url('./assets/fonts/TrajanPro-Regular.woff2') format('woff2'),
+    url('./assets/fonts/TrajanPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --fg-color: #ffd700;
+  --bg-color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Trajan Pro';
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 3px solid var(--fg-color);
+  backdrop-filter: blur(5px);
+  max-height: 10vh;
+  background-color: var(--bg-color);
+
+  a {
+    text-decoration: none;
+    color: var(--fg-color);
+    font-size: 2rem;
+    position: relative;
+    display: block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      transform: scale(0);
+      top: 1.3em;
+      left: -2%;
+      width: 104%;
+      height: 3px;
+      background-color: var(--fg-color);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+
+  .menu-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 1;
+    transform: translateX(120vh);
+    background: var(--bg-color);
+    transition: transform 0.3s ease-in-out;
+
+    &.open {
+      transform: translate(0);
+    }
+
+    @media (min-width: 800px) {
+      flex-direction: row;
+      position: unset;
+      transform: translateX(0);
+      height: unset;
+      background: transparent;
+    }
+
+    li {
+      a {
+        font-size: 1rem;
+        padding: 0.5em 1em;
+
+        &::after {
+          top: 2em;
+        }
+      }
+    }
+  }
+}
+
+// nav menu button
+.menu-btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+  margin-top: 1.5rem;
+  margin-left: auto;
+
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.menu-btn__lines,
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: var(--fg-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  content: '';
+  position: absolute;
+}
+
+.menu-btn__lines::before {
+  transform: translateY(-0.5rem);
+}
+
+.menu-btn__lines::after {
+  transform: translateY(0.5rem);
+}
+
+// animation
+.menu-btn.open .menu-btn__lines {
+  transform: translateX(2rem);
+  background-color: transparent;
+}
+
+.menu-btn.open .menu-btn__lines::before {
+  transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+  background-color: var(--fg-color);
+}
+
+.menu-btn.open .menu-btn__lines::after {
+  transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+  background-color: var(--fg-color);
+}
+
+.menu-btn.open .main-navigation {
+  transform: translate(0);
+}
+
+// Home page
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin-inline: auto;
+  padding: calc(5rem + 10vh) 0 5rem;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    display: block;
+    margin-inline: auto;
+  }
+
+  > * + * {
+    margin-top: 3rem;
+  }
+
+  .main-image {
+    width: 500px;
+  }
+
+  h1 {
+    font-weight: normal;
+  }
+}
