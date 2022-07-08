@@ -1,22 +1,23 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { getWorks } from '../features/works/worksSlice'
 
 const Works = () => {
-  const [works, setWorks] = useState('')
+  const dispatch = useDispatch()
+
+  const { works, isLoading, isError } = useSelector(state => state.works)
 
   useEffect(() => {
-    axios
-      .get('../data/data.json')
-      .then(({ data }) => setWorks(data))
-      .catch(console.error)
-  })
+    if (isError) {
+      console.error('error')
+    }
 
-  return (
-    <div>
-      Works
-      {works}
-    </div>
-  )
+    dispatch(getWorks())
+  }, [isError, dispatch])
+
+  console.log(works)
+
+  return <div>Works</div>
 }
 
 export default Works
