@@ -1,3 +1,70 @@
 {
-  "x": "y"
+  "digital-paintings": [
+    {
+      "title": "“Arya Stark” (Game of Thrones Fan Art)",
+      "medium": "Corel Painter",
+      "dimensions": "",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Digital%20Paintings/optimized/ARYA.jpg"
+    },
+    {
+      "title": "“Azog” (Lo Hobbit Fan Art)",
+      "medium": "Corel Painter",
+      "dimensions": "",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Digital%20Paintings/optimized/AZOG.jpg"
+    },
+    {
+      "title": "“Bycicle Girl” (The Walking Dead Fan Art)",
+      "medium": "Corel Painter",
+      "dimensions": "",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Digital%20Paintings/optimized/BICYCLE-GIRL.jpg"
+    },
+    {
+      "title": "“Eligos” (Ash vs Evil Dead Fan Art)",
+      "medium": "Corel Painter",
+      "dimensions": "",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Digital%20Paintings/optimized/ELIGOS.jpg"
+    },
+    {
+      "title": "“Sospiro” (Suspiria di Luca Guadagnino Fan Art)",
+      "medium": "Corel Painter",
+      "dimensions": "",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Digital%20Paintings/optimized/SOSPIRO.jpg"
+    }
+  ],
+  "sculture": [
+    {
+      "title": "“Nosferatu” (Herzog, Fan Art)",
+      "medium": "Cosclay",
+      "dimensions": "",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Sculture/optimized/Nosferatu.jpg"
+    },
+    {
+      "title": "“Cthulhu” (Lovecraft Inspired)",
+      "medium": "Cosclay",
+      "dimensions": "18/20 cm",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Sculture/optimized/CTHULHU.jpg"
+    }
+  ],
+  "traditional-paintings": [
+    {
+      "title": "“Shaman”",
+      "medium": "Pastelli ad Olio/Oil Pastels",
+      "dimensions": "A4",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Traditional/optimized/Shaman.jpg"
+    }
+  ],
+  "illustrazioni": [
+    {
+      "title": "“Bond”",
+      "medium": "China su carta",
+      "dimensions": "",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Traditional/optimized/Bond.jpg"
+    },
+    {
+      "title": "“Drooling”",
+      "medium": "China su carta",
+      "dimensions": "",
+      "imageUrl": "https://raw.githubusercontent.com/frozenborder72/tara-jabul/main/Immagini%20per%20Marco/Immagini%20per%20Marco/Traditional/optimized/Drooling.jpg"
+    }
+  ]
 }
