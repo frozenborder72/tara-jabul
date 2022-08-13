@@ -14,9 +14,11 @@ const Category = () => {
           .join(' ')}
       </h1>
       <div className='container-works'>
-        {works.map(({ title, medium, imageUrl, dimensions }, i) => (
+        {works.map(({ title, subtitle, medium, imageUrl, dimensions }, i) => (
           <div className='card' key={i}>
-            <h3>{title}</h3>
+            <h3>
+              {title} <span className='subtitle'>{subtitle}</span>
+            </h3>
             <img src={imageUrl} alt={title} />
             <p>
               {medium}
